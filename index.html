@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task Management Dashboard UI</title>
-    <link rel="stylesheet" href="pro.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="task-manager">
@@ -66,7 +66,34 @@
             </li>
           </ul>
         </div>
+        <!-- left content ends -->
       </div>
-    </div>
-</body>
+      <!--  -->
+      <!-- left bar ends -->
+
+      <!-- page content starts -->
+      <div class="page-content">
+        <div class="header">Today Tasks</div>
+        <!-- contnet categories starts -->
+        <div class="content-categories">
+          <div class="label-wrapper">
+            <input class="nav-item" name="nav" type="radio" id="opt-1" />
+            <label class="category" for="opt-1">All</label>
+          </div>
+          <div class="label-wrapper">
+            <input class="nav-item" name="nav" type="radio" id="opt-2" checked />
+            <label class="category" for="opt-2">Important</label>
+          </div>
+          <div class="label-wrapper">
+            <input class="nav-item" name="nav" type="radio" id="opt-3" />
+            <label class="category" for="opt-3">Notes</label>
+          </div>
+          <div class="label-wrapper">
+            <input class="nav-item" name="nav" type="radio" id="opt-4" />
+            <label class="category" for="opt-4">Links</label>
+          </div>
+        </div>    
+      </div>
+     </div> 
+   </body>  
 </html>
