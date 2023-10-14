@@ -26,7 +26,7 @@
   --box-color-4: #daffe5;
   --task-color: #777982;
 }
-
+// the innovation hub
 body {
   margin: 0;
   justify-content: center;
@@ -351,7 +351,7 @@ body,
   cursor: pointer;
 }
 /*  */
-/*  */
+
 @media screen and (max-width: 900px) {
   .left-bar {
     display: none;
