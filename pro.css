@@ -337,6 +337,7 @@ body,
 .green {
   background-color: var(--box-color-4);
 }
+
 .more-button {
   position: absolute;
   width: 3px;
@@ -350,7 +351,7 @@ body,
   cursor: pointer;
 }
 /*  */
-
+/*  */
 @media screen and (max-width: 900px) {
   .left-bar {
     display: none;
