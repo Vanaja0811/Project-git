@@ -5,9 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task Management Dashboard UI</title>
-    <link rel="stylesheet" href="pro.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header>
+    <nav>
+      <ul>
+        <li><a href="form.html"> Add Task </a></li>
+        <li><a href="view.php"> View Task </a></li>
+        <li><a href="aboutus.html"> About Us </a></li>
+      </ul>
+    </nav>
+  </header>
     <div class="task-manager">
       <!-- left bar starts -->
       <div class="left-bar">
@@ -18,51 +27,73 @@
           </div>
         </div>
 
+        <!-- left content starts -->
         <div class="left-content">
           <ul class="action-list">
+            <a href="https://www.google.com/maps">
             <li class="item">
-              <img class="feather feather-inbox" src="svg/inbox.svg" alt="google.com" />
-              <span>Inbox</span>
+              <img class="feather feather-star" src="svg/map.svg" alt="" />
+              <span>Map</span>
             </li>
-            <li class="item">
-              <img class="feather feather-star" src="svg/star.svg" alt="" />
-              <span> Today</span>
-            </li>
+            </a>
+            <a href="https://calendar.google.com/">
             <li class="item">
               <img class="feather feather-calendar" src="svg/calender.svg" alt="" />
-              <span>Upcoming</span>
+              <span>Calender</span>
             </li>
+            </a>
+            <a href="https://canvas.instructure.com">
+              <li class="item">
+                <img class="feather feather-users" src="svg/canvas.svg" alt="" />
+                <span>Canvas</span>
+              </li>
+            </a>
+            <a href="https://classroom.google.com/">
+              <li class="item">
+                <img class="feather feather-sun" src="svg/classroom.png" alt="" />
+                <span>Classroom</span>
+              </li>
+              </a>  
+            <a href="https://meet.google.com/">
             <li class="item">
-              <img class="feather feather-hash" src="svg/hash.svg" alt="" />
-              <span>Important</span>
-            </li>
-            <li class="item">
-              <img class="feather feather-users" src="svg/users.svg" alt="" />
+              <img class="feather feather-users" src="svg/meet.svg" alt="" />
               <span>Meetings</span>
             </li>
+            </a>
+            <a href="https://github.com/Vanaja0811/Project-git">
             <li class="item">
-              <img class="feather feather-trash" src="svg/trash.svg" alt="" />
-              <span>Trash</span>
+              <img class="feather feather-trash" src="svg/github.svg" alt="" />
+              <span>GitHub</span>
             </li>
+            </a>
           </ul>
 
           <ul class="category-list">
+            <a href="https://webmail.iitbhilai.ac.in/">
             <li class="item">
-              <img class="feather feather-users" src="svg/users.svg" alt="" />
-              <span>Family</span>
+              <img class="feather feather-inbox" src="svg/inbox.svg" alt="" />
+              <span>Webmail</span>
             </li>
+            </a>
+            <a href="https://aimsportal.iitbhilai.ac.in/iitbhAims/">
+              <li class="item">
+                <img class="feather feather-hash" src="svg/iit.png" alt="" />
+                <span>AIMS Portal</span>
+              </li>
+            </a>
+              
+            <a href="https://www.digilocker.gov.in/">
             <li class="item">
-              <img class="feather feather-sun" src="svg/sun.svg" alt="" />
-              <span>Vacation</span>
+              <img class="feather feather-trending-up" src="svg/digilocker.png" alt="" />
+              <span>DigiLocker</span>
             </li>
+            </a>
+            <a href="https://polaris.iitbhilai.ac.in/">
             <li class="item">
-              <img class="feather feather-trending-up" src="svg/trending.svg" alt="" />
-              <span>Festival</span>
+              <img class="feather feather-zap" src="svg/polaris.png" alt="" />
+              <span>Polaris</span>
             </li>
-            <li class="item">
-              <img class="feather feather-zap" src="svg/zap.svg" alt="" />
-              <span>Concerts</span>
-            </li>
+            </a>
           </ul>
         </div>
         <!-- left content ends -->
@@ -74,24 +105,7 @@
       <div class="page-content">
         <div class="header">Today Tasks</div>
         <!-- contnet categories starts -->
-        <div class="content-categories">
-          <div class="label-wrapper">
-            <input class="nav-item" name="nav" type="radio" id="opt-1" />
-            <label class="category" for="opt-1">All</label>
-          </div>
-          <div class="label-wrapper">
-            <input class="nav-item" name="nav" type="radio" id="opt-2" checked />
-            <label class="category" for="opt-2">Important</label>
-          </div>
-          <div class="label-wrapper">
-            <input class="nav-item" name="nav" type="radio" id="opt-3" />
-            <label class="category" for="opt-3">Notes</label>
-          </div>
-          <div class="label-wrapper">
-            <input class="nav-item" name="nav" type="radio" id="opt-4" />
-            <label class="category" for="opt-4">Links</label>
-          </div>
-        </div>
+        
         <!--  -->
         <!-- contemt categories ends -->
         <!-- tasks wrapper starts -->
@@ -99,14 +113,14 @@
           <div class="task">
             <input class="task-item" name="task" type="checkbox" id="item-1" checked />
             <label for="item-1">
-              <span class="label-text">Dashboard Design Implementation</span>
+              <span class="label-text">UI Design Implementation</span>
             </label>
             <span class="tag approved">Approved</span>
           </div>
           <div class="task">
             <input class="task-item" name="task" type="checkbox" id="item-2" checked />
             <label for="item-2">
-              <span class="label-text">Create a userflow</span>
+              <span class="label-text">Create a Dynamic Website</span>
             </label>
             <span class="tag progress">In Progress</span>
           </div>
@@ -142,28 +156,28 @@
           <div class="task">
             <input class="task-item" name="task" type="checkbox" id="item-7" />
             <label for="item-7">
-              <span class="label-text">Dashboard Design Implementation</span>
+              <span class="label-text">STT-2 Assignment</span>
             </label>
             <span class="tag waiting">Waiting</span>
           </div>
           <div class="task">
             <input class="task-item" name="task" type="checkbox" id="item-8" />
             <label for="item-8">
-              <span class="label-text">Create a userflow</span>
+              <span class="label-text">App Development</span>
             </label>
             <span class="tag waiting">Waiting</span>
           </div>
           <div class="task">
             <input class="task-item" name="task" type="checkbox" id="item-9" />
             <label for="item-9">
-              <span class="label-text">Application Implementation</span>
+              <span class="label-text">Make a music track</span>
             </label>
             <span class="tag waiting">Waiting</span>
           </div>
           <div class="task">
             <input class="task-item" name="task" type="checkbox" id="item-10" />
             <label for="item-10">
-              <span class="label-text">Create a Dashboard Design</span>
+              <span class="label-text">Create a 3D Model of IIT Bhilai</span>
             </label>
             <span class="tag waiting">Waiting</span>
           </div>
@@ -176,8 +190,9 @@
       <!-- right bar starts -->
       <div class="right-bar">
         <div class="top-part">
-          <img class="feather feather-users" src="svg/users.svg" alt="" />
-          <div class="count">6</div>
+          <a href="https://www.iitbhilai.ac.in/">
+          <img class="feather feather-users" src="svg/iit.png" alt=""/>
+          </a>
         </div>
         <div class="header">Schedule</div>
         <div class="right-content">
@@ -188,10 +203,10 @@
             </div>
             <div class="more-button"></div>
             <div class="members">
-              <img src="images/img1.jpg" alt="member" />
-              <img src="images/img2.jpg" alt="member-2" />
-              <img src="images/img3.jpg" alt="member-3" />
-              <img src="images/img4.jpg" alt="member-4" />
+              <img src="images/img1.png" alt="member" />
+              <img src="images/img2.png" alt="member-2" />
+              <img src="images/img3.png" alt="member-3" />
+              <img src="images/img4.png" alt="member-4" />
             </div>
           </div>
           <div class="task-box blue">
@@ -201,9 +216,9 @@
             </div>
             <div class="more-button"></div>
             <div class="members">
-              <img src="images/img5.jpg" alt="member" />
-              <img src="images/img6.jpg" alt="member-2" />
-              <img src="images/img7.jpg" alt="member-3" />
+              <img src="images/img5.png" alt="member" />
+              <img src="images/img6.png" alt="member-2" />
+              <img src="images/img7.png" alt="member-3" />
             </div>
           </div>
           <div class="task-box red">
@@ -213,10 +228,10 @@
             </div>
             <div class="more-button"></div>
             <div class="members">
-              <img src="images/img1.jpg" alt="member" />
-              <img src="images/img2.jpg" alt="member-2" />
-              <img src="images/img3.jpg" alt="member-3" />
-              <img src="images/img4.jpg" alt="member-4" />
+              <img src="images/img1.png" alt="member" />
+              <img src="images/img2.png" alt="member-2" />
+              <img src="images/img3.png" alt="member-3" />
+              <img src="images/img4.png" alt="member-4" />
             </div>
           </div>
           <div class="task-box green">
@@ -226,11 +241,11 @@
             </div>
             <div class="more-button"></div>
             <div class="members">
-              <img src="images/img5.jpg" alt="member" />
-              <img src="images/img6.jpg" alt="member-2" />
-              <img src="images/img7.jpg" alt="member-3" />
-              <img src="images/img8.jpg" alt="member-4" />
-              <img src="images/img9.jpg" alt="member-5" />
+              <img src="images/img5.png" alt="member" />
+              <img src="images/img6.png" alt="member-2" />
+              <img src="images/img7.png" alt="member-3" />
+              <img src="images/img8.png" alt="member-4" />
+              <img src="images/img9.png" alt="member-5" />
             </div>
           </div>
           <div class="task-box blue">
@@ -240,11 +255,11 @@
             </div>
             <div class="more-button"></div>
             <div class="members">
-              <img src="images/img5.jpg" alt="member" />
-              <img src="images/img6.jpg" alt="member-2" />
-              <img src="images/img7.jpg" alt="member-3" />
-              <img src="images/img8.jpg" alt="member-4" />
-              <img src="images/img9.jpg" alt="member-5" />
+              <img src="images/img5.png" alt="member" />
+              <img src="images/img6.png" alt="member-2" />
+              <img src="images/img7.png" alt="member-3" />
+              <img src="images/img8.png" alt="member-4" />
+              <img src="images/img9.png" alt="member-5" />
             </div>
           </div>
           <div class="task-box yellow">
@@ -254,10 +269,10 @@
             </div>
             <div class="more-button"></div>
             <div class="members">
-              <img src="images/img1.jpg" alt="member" />
-              <img src="images/img2.jpg" alt="member-2" />
-              <img src="images/img3.jpg" alt="member-3" />
-              <img src="images/img4.jpg" alt="member-4" />
+              <img src="images/img1.png" alt="member" />
+              <img src="images/img2.png" alt="member-2" />
+              <img src="images/img3.png" alt="member-3" />
+              <img src="images/img4.png" alt="member-4" />
             </div>
           </div>
         </div>
@@ -265,4 +280,3 @@
       <!-- right bar ends -->
   </body>
 </html>
-
