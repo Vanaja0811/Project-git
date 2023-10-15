@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Add a Task</title>
+	<link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="view.php"> View Task </a></li>
+            <li><a href="aboutus.html"> About Us </a></li>
+          </ul>
+        </nav>
+      </header>    
+	<h2>Add Task</h2>
+	
+	<form action="form.php" method="post">
+
+        <label for="name">Event Name:</label>
+        <input type="text" id="heading" name="heading" placeholder="Event Name" required><br><br>
+		
+		<label for="selection">Choose an option:</label>
+        <select name="eltype" id="eltype" placeholder="Select Type" required>
+            <option value="Events">Events</option>
+            <option value="Important">Important</option>
+            <option value="Notes">Notes</option>
+            <option value="Links">Links</option>
+        </select><br><br>
+
+        <label for="time">Time:</label><br><br>
+        <label for="time">from:</label>
+        <input type="time" id="timef" name="timef" required>&nbsp&nbsp&nbsp
+        <input type="date" id="datef" name="datef" required><br><br>
+        <label for="time">to:</label>
+        <input type="time" id="timet" name="timet" required>&nbsp&nbsp&nbsp
+        <input type="date" id="datet" name="datet" required><br><br>
+      
+        
+        <label for="Description">Description</label>
+		<br>
+		<textarea rows="5" cols="20" name="Description" id="description" placeholder="Optional"></textarea><br><br>
+		<input type="submit" value="Register">
+
+	</form>
+
+</body>
+
+</html>
