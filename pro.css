@@ -51,7 +51,7 @@ body {
     linear-gradient(48deg, rgba(31, 85, 147, 0.7323890641868473) 64%, rgba(247, 126, 132, 0.5) 43%);
   background-blend-mode: overlay, multiply, color, normal;
 }
-//merge
+
 ul {
   list-style-type: none;
   padding: 0;
